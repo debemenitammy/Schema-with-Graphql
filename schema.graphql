@@ -174,7 +174,7 @@ type Query {
 	players(username: String!): Players
 	players: [Players]
 	cohorts: [Cohort]
-	cohorts(name): Cohort
+	cohorts(name: String!): Cohort
 	simulations: [Simulations]
 	gameRepository(gameid: ID!, token: String!, color: String!, gametype: String, teamid: ID!): GameRepository
 	starsSimulation(id: ID!, name: String!, gameUrl: String!, setupUrl: String!, env: String!, configvar: String!, fieldMapping: String!): StarsSimulation
